@@ -1,1 +1,1 @@
-# optipic-umi
+# OptiPic / UMI.CMS
