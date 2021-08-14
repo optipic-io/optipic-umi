@@ -28,13 +28,13 @@
                 (function() {
                     var optipicCurrentHost = window.location.host;
                     var optipicSid = $("input#site_id").val();
-                    var optipicVersion = '1.20.0';
+                    var optipicVersion = '1.21.0';
                     if(
                         typeof(optipicCurrentHost)!='undefined'
                         && typeof(optipicSid)!='undefined'
                         && typeof(optipicVersion)!='undefined'
                     ) {
-                        var url = 'https://optipic.io/api/cp/stat?domain=' + optipicCurrentHost  + '&sid=' + optipicSid + '&cms=umi&stype=cdn&append_to=%23panel-settings&version=' + optipicVersion;
+                        var url = 'https://optipic.io/api/cp/stat?domain=' + optipicCurrentHost  + '&sid=' + optipicSid + '&cms=umi&stype=cdn&append_to=.panel-settings&version=' + optipicVersion;
 
                         var script = document.createElement('script');
                         script.type = 'text/javascript';

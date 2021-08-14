@@ -98,6 +98,7 @@ class optipic extends def_module {
         $exclusionsUrl = (string) $regEdit->get('//modules/'.self::MODULE_NAME.'/exclusions_url');
         $whitelistImgUrls = (string) $regEdit->get('//modules/'.self::MODULE_NAME.'/whitelist_img_urls');
         $srcsetAttrs = (string) $regEdit->get('//modules/'.self::MODULE_NAME.'/srcset_attrs');
+        $cdnDomain = (string) $regEdit->get('//modules/'.self::MODULE_NAME.'/cdn_domain');
 
         return array(
             'autoreplace_active' => $autoreplaceActive,
@@ -106,6 +107,7 @@ class optipic extends def_module {
             'exclusions_url' => $exclusionsUrl,
             'whitelist_img_urls' => $whitelistImgUrls,
             'srcset_attrs' => $srcsetAttrs,
+            'cdn_domain' => $cdnDomain,
         );
     }
 

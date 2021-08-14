@@ -28,7 +28,7 @@ class OptipicAdmin {
                 'text:exclusions_url' => '',
                 'text:whitelist_img_urls' => '',
                 'text:srcset_attrs' => '',
-                //'string:cdn_domain' => 'cdn.optipic.io',
+                'string:cdn_domain' => '',
             ]
         ];
 
@@ -40,7 +40,7 @@ class OptipicAdmin {
             $regEdit->set('//modules/'.$moduleName.'/exclusions_url', $params['config']['text:exclusions_url']);
             $regEdit->set('//modules/'.$moduleName.'/whitelist_img_urls', $params['config']['text:whitelist_img_urls']);
             $regEdit->set('//modules/'.$moduleName.'/srcset_attrs', $params['config']['text:srcset_attrs']);
-            //$regEdit->set('//modules/'.$moduleName.'/cdn_domain', $params['config']['string:cdn_domain']);
+            $regEdit->set('//modules/'.$moduleName.'/cdn_domain', $params['config']['string:cdn_domain']);
             $this->chooseRedirect();
         }
 
@@ -50,7 +50,7 @@ class OptipicAdmin {
         $params['config']['text:exclusions_url'] = (string) $regEdit->get('//modules/'.$moduleName.'/exclusions_url');
         $params['config']['text:whitelist_img_urls'] = (string) $regEdit->get('//modules/'.$moduleName.'/whitelist_img_urls');
         $params['config']['text:srcset_attrs'] = (string) $regEdit->get('//modules/'.$moduleName.'/srcset_attrs');
-        //$params['config']['string:cdn_domain'] = (string) $regEdit->get('//modules/'.$moduleName.'/cdn_domain');
+        $params['config']['string:cdn_domain'] = (string) $regEdit->get('//modules/'.$moduleName.'/cdn_domain');
 
         $this->setConfigResult($params);
 
